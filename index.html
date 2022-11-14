@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Password Generator by Andrés Sánchez</title>
+  <link rel="shortcut icon" href="img/logo.png">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <!--Inicio-->
+  <div class="container">
+    <div class="section">
+      <h2 class="header center white-text code">
+        Password Generator JS
+      </h2>
+      <h5 class="code">
+        <a href="#contacto">By Andrés Sánchez</a> <span class="white-text">
+      </h5>
+    </div>
+    <div class="row">
+      <div class="col s12 m9 l12">
+        <div id="instalacion" class="section scrollspy">
+          <h5 class="header white-text code">
+            Seleccione qué parámetro desea poner en su contraseña
+          </h5>
+          <div class="section">
+            <div class="row">
+              <div class="col l6 s12">
+                <input class="redcolor" type="checkbox" name="charsetMay" id="charsetMay">
+                <label class="container" for="charsetMay">&nbsp;Letras Mayusculas</label>
+              </div>
+              <div class="col l6 s12">
+                <input class="redcolor" type="checkbox" name="num" id="num">
+                <label class="container" for="num">&nbsp;Números</label>
+              </div>
+              <div class="col l6 s12">
+                <input class="redcolor" type="checkbox" name="charsetMin" id="charsetMin">
+                <label class="container" for="charsetMin">&nbsp;Letras Minusculas</label>
+              </div>
+              <div class="col l6 s12">
+                <input class="redcolor" type="checkbox" name="sym" id="sym">
+                <label class="container" for="sym">&nbsp;Símbolos</label>
+              </div>
+            </div>
+            <div class="row">
+              <form class="col l12 s12" action="#">
+                <p class="range-field">
+                  <input type="range" id="myRange" name="rangeInput" min="8" max="20">
+                </p>
+              </form>
+              <p class="code white-text">La longitud de la contra sera de: <span id="demo"></span><span>
+                  carácteres</span></p>
+            </div>
+            <div class="row">
+              <a onclick="generatePassword()" class="waves-effect waves-light btn col l12 s12 red">Generar</a>
+            </div>
+            <div class="row">
+              <input id="passGenerated" class="white-text col l11 s12" readonly type="text">
+              <a onclick="copyPassword()" class="waves-effect waves-light btn col l1 s12 red">Copiar</a>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="center" id="contacto">
+      <h4 class="code">
+        <a class="enlaces" target="_blank" href="https://www.linkedin.com/in/andres-sanchez-vera/">LinkedIn</a> <span
+          class="white-text">|</span>
+        <a class="enlaces" target="_blank" href="https://github.com/snchezz">GitHub</a>
+      </h4>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Bold.ttf);
+}
+
+.center .materialboxed,
+.center-align .materialboxed {
+  margin: 0 auto;
+  position: relative !important;
+  padding-bottom: 2%;
+}
+
+.enlaces {
+  color: rgb(255, 255, 255);
+  transition: all ease-in-out 0.3s;
+}
+
+.enlaces:hover {
+  color: #039BE5;
+}
+
+body {
+  background-color: #000;
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li a.active {
+  border-bottom: 1px solid #333;
+}
+
+input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5);
+  /* IE */
+  -moz-transform: scale(1.5);
+  /* FF */
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  -o-transform: scale(1.5);
+  /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+.checkboxtext {
+  font-size: 110%;
+  display: inline;
+}
+
+label {
+  font-size: x-large;
+}
+
+.redcolor {
+  accent-color: #f44336;
+}
+
+span.field-icon {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#sure {
+  visibility: hidden;
+}
+
+.sureyes {
+  visibility: visible;
+}
